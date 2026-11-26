@@ -8,9 +8,9 @@ This repo is an entry for the make.fun bounty **One Star, Five Stars for the Foo
 
 ## The entry
 
-> One star: your planet's air tastes of burnt petrol, your people worship glowing rectangles, yet the noodles alone almost justify this miserable rock.
+> One star: your gravity is a faulty rental, your weather files complaints daily, and your queues are a punishment — but the street tacos alone are worth the invasion.
 
-That is 149 characters: one sentence, one star, and one real compliment. The air tastes of burnt petrol, humanity worships glowing rectangles — and the noodles alone almost justify this miserable rock.
+That is 165 characters: one sentence, one star, and one real compliment. The gravity is a faulty rental, the weather files complaints daily, the queues are a punishment — but the street tacos alone are worth the invasion.
 
 ## How to run it
 
@@ -26,9 +26,9 @@ Before anything is written, `validate_entry()` checks the sentence against every
 
 - it is not blank;
 - it is a single line (no line breaks);
-- its length is within 1–200 characters — and exactly the expected 149;
+- its length is within 1–200 characters — and exactly the expected 165;
 - it opens with the one-star framing (`One star:`);
-- it contains the compliment about the food (`noodles`).
+- it contains the compliment about the food (`street tacos`).
 
 If any check fails, the program lists every problem on stderr and exits with status 1 without writing a file.
 

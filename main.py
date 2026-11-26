@@ -17,9 +17,9 @@ import os
 import sys
 from pathlib import Path
 
-ENTRY = "One star: your planet's air tastes of burnt petrol, your people worship glowing rectangles, yet the noodles alone almost justify this miserable rock."
+ENTRY = "One star: your gravity is a faulty rental, your weather files complaints daily, and your queues are a punishment — but the street tacos alone are worth the invasion."
 
-EXPECTED_LENGTH = 149
+EXPECTED_LENGTH = 165
 MAX_LENGTH = 200
 OUTPUT_PATH = Path("/output/entry.txt")
 
@@ -28,10 +28,10 @@ def validate_entry(text: str) -> list[str]:
     """Check the entry against every bounty rule and return problems.
 
     An empty list means the entry is valid. The checks are:
-    length within 1-200 characters (and exactly the expected 149),
+    length within 1-200 characters (and exactly the expected 165),
     a single line with no line breaks, non-blank, starting with the
-    one-star framing, and containing the food compliment.
-    """
+    one-star framing, and containing the food compliment about the
+    street tacos.    """
     problems: list[str] = []
     if not text.strip():
         problems.append("entry is blank")
@@ -45,7 +45,7 @@ def validate_entry(text: str) -> list[str]:
         )
     if not text.startswith("One star:"):
         problems.append("entry must open with the one-star framing")
-    if "noodles" not in text:
+    if "tacos" not in text:
         problems.append("entry must contain the compliment about the food")
     return problems
 
